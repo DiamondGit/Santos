@@ -1,0 +1,127 @@
+div.page{
+    text-align: center;
+    margin-left:10%;
+    width: 80%;
+    align: center;
+    margin-top: 240px;
+    align-items: center;
+    background-color: rgba(11,11,11,0.9);
+    border: 2px solid rgb(212, 255, 19);
+    z-index: -11;
+    font-family: "Montserrat Light",serif;
+    padding: 10px;
+}
+.page h1{
+    font-family: "Montserrat Medium",serif;
+    font-size: 45px;
+    background: linear-gradient(90deg, #222 35%, #999 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    -ms-user-select:     none;
+    -moz-user-select:    none;
+    -webkit-user-select: none;
+}
+.catalog{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    margin: 20px 5px;
+    width: 200px;
+    height: 270px;
+    overflow: hidden;
+    border: 2px solid rgb(212,255,19);
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+
+}
+.item img{
+    width: 200px;
+    margin: 0;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .description{
+    position: absolute;
+    color: white;
+    padding: 0;
+    top:200px;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .header-container{
+    height: 70px;
+    margin: 0;
+}
+.item .header-container h3{
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .description p{
+    border-top: 2px solid rgb(212,255,19);
+    background-color: black;
+    padding: 5px 10px;
+    margin: 0;
+    text-indent: 10px;
+    text-align: left;
+    color: white;
+}
+.item .price,.item .price-kzt{
+    top: 30px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    width: max-content;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .price{
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+.item .price-kzt{
+    right:0;
+    top:-35px;
+    border-radius: 20px 0 0 20px;
+}
+.item .price h3,.item .price-kzt h3{
+    font-family: "Montserrat ExtraLight",serif;
+    text-align: right;
+    color: white;
+    padding: 0 4px;
+    margin: 0;
+}
+.item .price-kzt span{
+    font-size: 10px;
+}
+
+.item:hover img{
+    width: 210px;
+    transform: translate(-5px, -5px);
+}
+.item:hover div.description{
+    top:100px;
+}
+.item:hover div.price-kzt{
+    top: 30px;
+}

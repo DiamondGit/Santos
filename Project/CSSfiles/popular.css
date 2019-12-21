@@ -1,0 +1,123 @@
+.main-page{
+    text-align: center;
+    margin-left:10%;
+    width: 80%;
+    align: center;
+    margin-top: 240px;
+    z-index: -10;
+    font-family: "Montserrat Light",serif;
+    background-color: rgba(11,11,11,0.9);
+    border: 2px solid rgb(212, 255, 19);
+}
+.page_header{
+    font-size: 40px;
+    font-family: "Montserrat SemiBold",serif;
+    background: linear-gradient(90deg,white,black);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 10px;
+}
+.page{
+    display: flex;
+    align-items: center;
+    z-index: -11;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid rgb(212,255,19);
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+.item img{
+    width: 300px;
+    margin: 0;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .description{
+    position: absolute;
+    color: white;
+    padding: 0;
+    top:200px;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .header-container{
+    height: 70px;
+    margin: 0;
+}
+.item .header-container h3{
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .description p{
+    border-top: 2px solid rgb(212,255,19);
+    background-color: black;
+    padding: 5px 10px;
+    margin: 0;
+    text-indent: 10px;
+    text-align: left;
+    color: white;
+}
+.item .price,.item .price-kzt{
+    top: 30px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    width: max-content;
+
+    transition:        0.2s;
+    -o-transition:     0.2s;
+    -moz-transition:   0.2s;
+    -webkit-transition:0.2s;
+}
+.item .price{
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+.item .price-kzt{
+    right:0;
+    top:-35px;
+    border-radius: 20px 0 0 20px;
+}
+.item .price h3,.item .price-kzt h3{
+    font-family: "Montserrat ExtraLight",serif;
+    text-align: right;
+    color: white;
+    padding: 0 4px;
+    margin: 0;
+}
+.item .price-kzt span{
+    font-size: 10px;
+}
+
+.item:hover img{
+    width: 310px;
+    transform: translate(-5px, -5px);
+}
+.item:hover div.description{
+    top:100px;
+}
+.item:hover div.price-kzt{
+    top: 30px;
+}

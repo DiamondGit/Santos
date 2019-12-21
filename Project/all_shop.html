@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Santos | Shop</title>
+    <link rel="icon" href="../Project_pictures/icon.png" type="image/x-icon">
+    <link href="CSSfiles/all_shop.css" rel="stylesheet" type="text/css">
+    <link href="CSSfiles/navigation_bar.css" rel="stylesheet" type="text/css">
+    <link href="CSSfiles/footer.css" rel="stylesheet" type="text/css">
+    <link href="CSSfiles/BackToTop.css" rel="stylesheet" type="text/css">
+    <script src="JSfiles/main.js"></script>
+    <script src="JSfiles/search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),url("../Project_pictures/back4.jpg");
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a id="BackToTop"><i class="fa fa-chevron-circle-up"></i></a>
+    <script src="JSfiles/BackToTop.js"></script>
+
+    <div id ="div-nav-main" class="navbar"><!--navbar-->
+        <div class="navigation">
+            <div class="slideOpener"><i class="material-icons" onclick="uniNav()" onmouseover="preOpen()" onmouseout="Normal()">menu</i></div>
+            <div class="logo"><a href="main.html"><i class="material-icons">blur_on</i>Santos</a></div>
+            <div class="tabs">
+                <div class="tab activeNav"><a href="all_shop.html">Shop</a><div class="drop-container"><i class="material-icons">store</i></div></div>
+                <div class="tab"><a href="popular.html">Popular Items</a><div class="drop-container"><i class="material-icons">trending_up</i></div></div>
+                <div class="tab"><a href="services.html">Services</a><div class="drop-container"><i class="material-icons">format_paint</i></div></div> <!-- smoking_rooms -->
+                <div class="tab"><a href="news.html">News</a><div class="drop-container"><i class="material-icons">ballot</i></div></div>
+                <div class="tab"><a href="support.html">Support</a><div class="drop-container"><i class="material-icons">contact_support</i></div></div>
+            </div>
+            <div class="search">
+                <form id="search">
+                    <input id="search_bar" type="text" placeholder="Search from Santos" name="search_inp">
+                    <button id="submit_button" type="button" onclick="slideSearch()" title="Search"><i class="material-icons">search</i></button>
+                </form>
+            </div>
+        </div>
+        <div id="arrow"><i class="material-icons">double_arrow</i></div>
+        <div id="div-nav-slide" class="nav-slider">
+            <div class="rightLine"></div>
+            <div class="cross-container"><i class="material-icons" onclick="uniNav()">clear</i></div>
+            <div class="a-container">
+                <div class="main-a-catalog" onclick="window.open('Catalogs/building_materials.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs activeNav" href="Catalogs/building_materials.html">Building Materials</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/decoration.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/decoration.html">Decoration</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/paints.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/paints.html">Paints</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/tools.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/tools.html">Tools</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/electrical_goods.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/electrical_goods.html">Electrical Goods</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/plumbing.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/plumbing.html">Plumbing</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/house_and_garden.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/house_and_garden.html">House and Garden</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/windows.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/windows.html">Windows</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/stairs.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/stairs.html">Stairs</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/doors.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/doors.html">Doors</a>
+                </div>
+                <div class="main-a-catalog" onclick="window.open('Catalogs/other.html','_self')">
+                    <div class="back-filler"></div>
+                    <a class="catalogs" href="Catalogs/other.html">Other</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="shadow" onclick="closeNav()"></div>
+
+    <div class="main-page">
+        <div class="page">
+            <div class="catalog">
+                <h2>Building Materials</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/BM1.html','_blank')">
+                        <img src="../Project_pictures/BM1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/BM2.html','_blank')">
+                        <img src="../Project_pictures/BM2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/BM3.html','_blank')">
+                        <img src="../Project_pictures/BM3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/BM4.html','_blank')">
+                        <img src="../Project_pictures/BM4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/BM5.html','_blank')">
+                        <img src="../Project_pictures/BM5.png">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button onclick="window.open('Catalogs/building_materials.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Decoration</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/DEC1.html','_blank')">
+                        <img src="../Project_pictures/DEC1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DEC2.html','_blank')">
+                        <img src="../Project_pictures/DEC2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DEC3.html','_blank')">
+                        <img src="../Project_pictures/DEC3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DEC4.html','_blank')">
+                        <img src="../Project_pictures/DEC4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DEC5.html','_blank')">
+                        <img src="../Project_pictures/DEC5.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button onclick="window.open('Catalogs/decoration.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Paints</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/PN1.html','_blank')">
+                        <img src="../Project_pictures/PN1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PN2.html','_blank')">
+                        <img src="../Project_pictures/PN2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PN3.html','_blank')">
+                        <img src="../Project_pictures/PN3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PN4.html','_blank')">
+                        <img src="../Project_pictures/PN4.png">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PN5.html','_blank')">
+                        <img src="../Project_pictures/PN5.png">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/paints.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Tools</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/TL1.html','_blank')">
+                        <img src="../Project_pictures/TL1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/TL2.html','_blank')">
+                        <img src="../Project_pictures/TL2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/TL3.html','_blank')">
+                        <img src="../Project_pictures/TL3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/TL4.html','_blank')">
+                        <img src="../Project_pictures/TL4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/TL5.html','_blank')">
+                        <img src="../Project_pictures/TL5.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/tools.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Electrical Tools</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/ET1.html','_blank')">
+                        <img src="../Project_pictures/ET1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ET2.html','_blank')">
+                        <img src="../Project_pictures/ET2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ET3.html','_blank')">
+                        <img src="../Project_pictures/ET3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ET4.html','_blank')">
+                        <img src="../Project_pictures/ET4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ET5.html','_blank')">
+                        <img src="../Project_pictures/ET5.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/electrical_goods.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Plumbing</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/PL1.html','_blank')">
+                        <img src="../Project_pictures/PL1.jpeg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PL2.html','_blank')">
+                        <img src="../Project_pictures/PL2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PL3.html','_blank')">
+                        <img src="../Project_pictures/PL3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PL4.html','_blank')">
+                        <img src="../Project_pictures/PL4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/PL5.html','_blank')">
+                        <img src="../Project_pictures/PL5.jpeg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/plumbing.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>House and Garden</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/HG1.html','_blank')">
+                        <img src="../Project_pictures/HG1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/HG2.html','_blank')">
+                        <img src="../Project_pictures/HG2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/HG3.html','_blank')">
+                        <img src="../Project_pictures/HG3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/HG4.html','_blank')">
+                        <img src="../Project_pictures/HG1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/HG5.html','_blank')">
+                        <img src="../Project_pictures/HG5.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/house_and_garden.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Windows</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/WN1.html','_blank')">
+                        <img src="../Project_pictures/WN1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/WN2.html','_blank')">
+                        <img src="../Project_pictures/WN2.jpeg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/WN3.html','_blank')">
+                        <img src="../Project_pictures/WN3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/WN4.html','_blank')">
+                        <img src="../Project_pictures/WN4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/WN5.html','_blank')">
+                        <img src="../Project_pictures/WN5.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/windows.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Stairs</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/ST1.html','_blank')">
+                        <img src="../Project_pictures/ST1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ST2.html','_blank')">
+                        <img src="../Project_pictures/ST2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ST3.html','_blank')">
+                        <img src="../Project_pictures/ST3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ST4.html','_blank')">
+                        <img src="../Project_pictures/ST4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/ST5.html','_blank')">
+                        <img src="../Project_pictures/ST5.png">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/stairs.html','_blank')">See More</button>
+                </div>
+            </div>
+            <div class="catalog">
+                <h2>Doors</h2>
+                <div class="catal-row">
+                    <div class="item" onclick="window.open('Items/DR1.html','_blank')">
+                        <img src="../Project_pictures/DR1.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DR2.html','_blank')">
+                        <img src="../Project_pictures/DR2.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DR3.html','_blank')">
+                        <img src="../Project_pictures/DR3.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DR4.html','_blank')">
+                        <img src="../Project_pictures/DR4.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <div class="item" onclick="window.open('Items/DR5.html','_blank')">
+                        <img src="../Project_pictures/DR5.jpg">
+                        <div class="price">
+                            <h3>$99.99</h3>
+                        </div>
+                        <div class="price-kzt">
+                            <h3>38 731.12 <span>KZT</span></h3>
+                        </div>
+                        <div class="description">
+                            <div class="header-container">
+                                <h3>The standard chunk of Lorem Ipsum</h3>
+                            </div>
+                            <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                        </div>
+                    </div>
+                    <button  onclick="window.open('Catalogs/doors.html','_blank')">See More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-container">
+        <h3>Also you can just click on that item that you want!</h3>
+        <div class="map">
+            <img src="../Project_pictures/map2(2).jpg" usemap="#mapCatalog">
+            <map name="mapCatalog">
+                <area target="_blank" alt="Panels" title="Panels" href="#" coords="0,239,909,124" shape="rect">
+                <area target="_blank" alt="Roulette" title="Roulette" href="#" coords="930,157,930,191,930,223,974,227,997,208,1003,187,992,165,970,156" shape="poly">
+                <area target="_blank" alt="Pencil" title="Pencil" href="#" coords="928,301,941,279,1047,177,1070,165,1056,184,948,290" shape="poly">
+                <area target="_blank" alt="Level" title="Level" href="#" coords="451,305,799,362" shape="rect">
+                <area target="_blank" alt="Switch" title="Switch" href="#" coords="303,21,432,108" shape="rect">
+                <area target="_blank" alt="Calculator" title="Calculator" href="#" coords="573,624,536,523,632,488,686,624" shape="poly">
+                <area target="_blank" alt="Brush" title="Brush" href="#" coords="1248,252,1242,235,1244,225,1181,159,1145,194,1209,259,1230,266,1248,285" shape="poly">
+                <area target="_blank" alt="Paint" title="Paint" href="#" coords="1248,405,1195,373,1169,337,1162,286,1183,236,1219,203,1248,190" shape="poly">
+                <area target="_blank" alt="Joiner Square" title="Joiner Square" href="#" coords="561,295,815,294,817,423,856,423,856,247,561,246" shape="poly">
+                <area target="_blank" alt="Extension" title="Extension" href="#" coords="718,624,699,574,704,529,718,509,740,500,769,497,788,501,803,518,812,535,812,553,820,540,840,528,866,548,862,567,853,583,833,588,814,606,793,624,745,624" shape="poly">
+                <area target="_blank" alt="Wood Screwdriver" title="Wood Screwdriver" href="Items/TL4.html" coords="872,248,901,249,899,324,898,340,897,353,890,365,888,381,886,483,882,490,878,479,877,379,873,363,872,351,870,321" shape="poly">
+                <area target="_blank" alt="Paint Roller" title="Paint Roller" href="#" coords="1009,314,1096,235,1107,236,1115,239,1123,236,1154,268,1156,280,1133,337,1137,354,1159,360,1170,362,1177,383,1211,418,1246,461,1248,510,1192,445,1161,403,1139,399,1123,376,1132,360,1127,343,1130,324,1148,280,1147,266,1123,244,1124,265,1037,342,1021,331" shape="poly">
+                <area target="_blank" alt="Plastic Screwdriver" title="Plastic Screwdriver" href="#" coords="522,381,605,386,617,388,625,391,636,389,662,391,710,392,710,377,625,374,613,377,607,380" shape="poly">
+                <area target="_blank" alt="Wrench" title="Wrench" href="#" coords="508,407,518,398,534,396,706,402,747,389,767,378,785,385,800,401,801,410,776,401,763,415,766,424,789,436,784,443,752,450,735,449,730,438,706,427,525,429,512,423" shape="poly">
+                <area target="_blank" alt="Brush" title="Brush" href="#" coords="194,625,219,570,216,538,206,519,229,442,238,398,249,396,331,425,325,437,283,541,259,552,238,583,226,623" shape="poly">
+                <area target="_blank" alt="Paint" title="Paint" href="#" coords="259,545,68" shape="circle">
+                <area target="_blank" alt="Light Bulb" title="Light Bulb" href="#" coords="18,-1,53,58,86,58,105,46,101,35,123,19,117,5,139,6,154,19,172,19,186,0" shape="poly">
+                <area target="_blank" alt="Palette" title="Palette" href="#" coords="877,622,911,573,958,529,1016,493,1086,473,1154,473,1224,489,1248,513,1248,625" shape="poly">
+                <area target="_blank" alt="Metal Tube" title="Metal Tube" href="Items/PL2.html" coords="134,259,130,273,138,283,147,286,158,306,178,293,178,279,183,269,206,274,216,284,206,296,179,307,173,323,185,332,200,329,208,338,218,349,231,347,236,329,226,317,233,302,236,286,250,275,264,267,268,252,255,244,241,246,230,254,221,270,216,254,205,250,186,246,175,248,170,255,157,253,144,252" shape="poly">
+                <area target="_blank" alt="Solar panels" title="Solar panels" href="#" coords="281,1,280,101,-1,106,1,1" shape="poly">
+                <area target="_blank" alt="Plastic Screwdriver" title="Plastic Screwdriver" href="#" coords="537,248,536,267,469,264,453,265,438,261,361,256,438,253,454,250,467,252" shape="poly">
+                <area target="_blank" alt="Parquet" title="Parquet" href="#" coords="526,623,529,616,505,595,527,571,508,553,568,482,405,339,391,341,353,382,295,337,289,342,280,337,54,599,82,624" shape="poly">
+                <area target="_blank" alt="Wallpaper" title="Wallpaper" href="#" coords="989,507,919,432,950,404,920,374,953,348,928,317,1117,139,1248,141,1248,514,1160,483" shape="poly">
+                <area target="_blank" alt="Scissors" title="Scissors" href="#" coords="668,511,660,493,673,478,663,464,662,450,678,437,703,440,713,455,827,476,716,492,713,505,702,513,688,517" shape="poly">
+                <area target="_blank" alt="Screws" title="Screws" href="#" coords="837,490,833,496,910,557,928,542,850,475,847,483,921,546,917,552" shape="poly">
+                <area target="_blank" alt="Dowel" title="Dowel" href="#" coords="907,485,944,525,967,504,929,464,919,471,957,510,950,516,914,479" shape="poly">
+                <area target="_blank" alt="Water Taps" title="Water Taps" href="#" coords="38,469,85,467,92,441,111,419,168,401,173,411,195,401,191,389,190,379,89,401,83,387,90,379,88,354,154,336,103,341,42,365,32,384,33,394" shape="poly">
+                <area target="_blank" alt="Water Hose" title="Water Hose" href="#" coords="0,503,17,503,19,413,40,355,86,295,69,280,59,294,38,282,26,304,0,352" shape="poly">
+                <area target="_blank" alt="Tile" title="Tile" href="#" coords="241,380,77,241,0,329,-1,548,52,599" shape="poly">
+                <area target="_blank" alt="Plastic Rings" title="Plastic Rings" href="#" coords="584,440,577,449,586,461,590,476,600,480,611,470,603,461,610,451,600,437" shape="poly">
+                <area target="_blank" alt="Plastic Gaskets" title="Plastic Gaskets" href="#" coords="-1,310,7,294,32,284,41,269,35,246,15,236,-1,247" shape="poly">
+                <area target="_blank" alt="Putty knife" title="Putty knife" href="#" coords="445,49,448,65,463,75,559,70,590,94,632,109,668,111,668,1,642,0,592,17,559,41,482,36,458,35" shape="poly">
+                <area target="_blank" alt="Foldable Ruler" title="Foldable Ruler" href="#" coords="724,0,727,100,769,99,766,0" shape="poly">
+                <area target="_blank" alt="Lawn" title="Lawn" href="#" coords="781,0,783,105,899,103,898,-1" shape="poly">
+                <area target="_blank" alt="Shelf" title="Shelf" href="#" coords="923,2,925,114,920,125,919,138,1248,139,1248,-1" shape="poly">
+                <area target="_blank" alt="Plastic Tube" title="Plactic Tube" href="#" coords="264,267,276,270,280,276,307,277,335,280,354,272,374,278,416,280,420,294,419,314,414,324,377,327,361,333,343,335,329,325,310,327,276,329,270,335,257,331,248,310,253,278" shape="poly">
+            </map>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-info">
+            <div class="links">
+                <div>
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="FooterLinks/AboutUs.html">About Us</a></li>
+                        <li><a href="FooterLinks/Careers.html">Careers</a></li>
+                        <li><a href="FooterLinks/CompareSales.html">Corporate Sales</a></li>
+                        <li><a href="FooterLinks/WhereToBuy.html">Where to Buy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="FooterLinks/Contact.html">Contact</a></li>
+                        <li><a href="FooterLinks/Returns.html">Returns</a></li>
+                        <li><a href="FooterLinks/Warranty.html">Warranty</a></li>
+                        <li><a href="FooterLinks/Help.html">Help</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="FooterLinks/Privacy.html">Privacy</a></li>
+                        <li><a href="FooterLinks/Terms.html">Terms</a></li>
+                        <li><a href="FooterLinks/Patents.html">Patents</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-desc">
+                <div class="small-info">
+                    <div class="about">
+                        <h3>About the company</h3>
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                    </div>
+                    <div class="address">
+                        <ul>
+                            <li><i class="material-icons">room</i><span>21 Revolution Street  |  <strong>Paris, France</strong></span></li>
+                            <li><i class="material-icons">call</i><span>+1 555 12345  |  <strong>Alberto Franc</strong></span></li>
+                            <li><i class="material-icons">email</i><span>support@company.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon-container">
+                    <div class="icons">
+                        <div><i class="fa fa-facebook-square" onclick="window.open('https://www.facebook.com')"></i></div>
+                        <div><i class="fa fa-google-plus-square" onclick="window.open('https://www.googleplus.com')"></i></div>
+                        <div><i class="fa fa-instagram" onclick="window.open('https://www.instagram.com')"></i></div>
+                        <div><i class="fa fa-youtube-square" onclick="window.open('https://www.youtube.com')"></i></div>
+                        <div><i class="fa fa-linkedin-square" onclick="window.open('https://www.linkedin.com')"></i></div>
+                        <div><i class="fa fa-twitter-square" onclick="window.open('https://www.twitter.com')"></i></div>
+                        <div><i class="fa fa-pinterest-square" onclick="window.open('https://www.pinterest.com')"></i></div>
+                        <div><i class="fa fa-snapchat-square" onclick="window.open('https://www.snapchat.com')"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+#mut-div{
+    position: fixed;
+    display: unset;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin:0;
+    padding: 0;
+    top:0;
+    left:0;
+}
+i{
+    user-select:         none;
+    -ms-user-select:     none;
+    -moz-user-select:    none;
+    -webkit-user-select: none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border: none;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border: 2px solid rgb(212,255,19);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(212,255,19);
+}
+#div-nav-main{
+    position: relative;
+}
+.navigation{
+    display: flex;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 7;
+    background: linear-gradient(black -60%, rgb(212,255,19),black 160%);
+    height: 80px;
+    box-shadow: 0 0 20px 5px black;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    /*overflow: hidden;*/
+}
+.navigation .tab{
+    margin: 0;
+    position: relative;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+}
+
+.navigation div{
+    margin-left: 5px;
+    height: max-content;
+}
+.navigation .slideOpener i{
+    font-size: 50px;
+    cursor: pointer;
+}
+.navigation .logo{
+    width: 190px;
+    margin-left: 90px;
+    font-size: 35px;
+    transform: translateY(-5px);
+}
+.navigation .logo i{
+    font-size: 50px;
+    color: black;
+    transform: translate(10px,10px);
+}
+.navigation .logo a{
+    font-family: "COCOGOOSE LETTERPRESS",serif;
+}
+.navigation .tabs{
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+    font-size: 25px;
+    font-family: Montserrat,serif;
+}
+.navigation .tabs a{
+    margin: 0;
+    padding: 25px 15px;
+    background: linear-gradient(black -60%, rgb(212,255,19),black 160%);
+
+    transition:         0.2s;
+    -o-transition:      0.2s;
+    -moz-transition:    0.2s;
+    -webkit-transition: 0.2s;
+}
+.navigation .tab .drop-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    z-index: -10;
+    top: -30px;
+}
+.navigation .tabs i{
+    position: absolute;
+    font-size: 60px;
+    background-color: rgb(212,255,19);
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+
+    transition:         0.3s;
+    -o-transition:      0.3s;
+    -moz-transition:    0.3s;
+    -webkit-transition: 0.3s;
+}
+.navigation .tab:hover i{
+    transform: translateY(95px);
+    visibility: visible;
+    opacity: 0.6;
+}
+.navigation .tab i:hover{
+    transform: translateY(0);
+    visibility: hidden;
+    opacity: 0;
+}
+.navigation .search{
+    margin-left: 200px;
+    height: max-content;
+    padding: 0;
+    transform: translateY(-3px);
+}
+.navigation form#search{
+    height: 40px;
+    border: 2px solid black;
+    background: rgba(0,0,0,0.8);
+    border-radius: 100px;
+    font-size: 18px;
+    font-family: Montserrat,serif;
+    transform: translateY(4px);
+    box-shadow: 0 0 10px black;
+}
+.navigation .search input{
+    font-size: 18px;
+    padding: 11px 5px 11px 10px;
+    outline: none;
+    color: white;
+    width: 230px;
+    border: none;
+    background: transparent;
+    transform: translate(7px, -8px);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.navigation .search input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+.navigation .search button{
+    border: none;
+    background: transparent;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    transform: translate(4px, -2px);
+    margin-left: 5px;
+    cursor: pointer;
+}
+.navigation .search button i{
+    font-size: 25px;
+    color: rgb(212,255,19);
+    transform: translate(-4px,2px);
+
+    transition:         0.25s;
+    -o-transition:      0.25s;
+    -moz-transition:    0.25s;
+    -webkit-transition: 0.25s;
+}
+.navigation .tabs a:hover{
+    box-shadow: inset 0 0 25px black;
+}
+.navigation .tabs a:active{
+    box-shadow: inset 0 0 45px 5px black;
+}
+.navigation .search button:hover i{
+    color: coral;
+}
+.navigation div.slideOpener:hover #div-nav-slide{
+    width: 20px;
+}
+.navigation .tabs .activeNav a{
+    box-shadow: inset 0 0 25px black;
+    background: coral;
+}
+.navigation .tabs .activeNav i{
+    background: radial-gradient(coral 50%,black);
+}
+
+
+#shadow{
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    top:0;
+    left:0;
+    transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+div.nav-slider{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #222831, black);
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow: hidden;
+}
+.a-container{
+    display: block;
+    font-family: "Montserrat",serif;
+    font-size: 18px;
+    padding: 20px;
+}
+.a-container div.main-a-catalog{
+    min-width: 220px;
+    overflow: hidden;
+    padding: 5px 0 0 0 ;
+    margin: 5px;
+    border-radius: 20px;
+    background: #222831;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    border-left: 0 solid rgb(212,255,19);
+
+    transition:         border-left-width 0.4s;
+    -o-transition:      border-left-width 0.4s;
+    -moz-transition:    border-left-width 0.4s;
+    -webkit-transition: border-left-width 0.4s;
+}
+div.back-filler{
+    position: absolute;
+    background: linear-gradient(-20deg,rgb(212,255,19) -30%, transparent 50%);
+    width: 220px;
+    height: 35px;
+    top:0;
+    right: -230px;
+    z-index: 12;
+
+    transition:         0.4s;
+    -o-transition:      0.4s;
+    -moz-transition:    0.4s;
+    -webkit-transition: 0.4s;
+}
+div.main-a-catalog:hover{
+    background-color: #14171e;
+    border-left-width: 10px;
+}
+div.main-a-catalog{
+    z-index: 13;
+}
+div.main-a-catalog:hover div.back-filler{
+    right:0;
+}
+.a-container a{
+    text-decoration: none;
+    color: rgb(212,255,19);
+    padding: 20px 10px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .navbar {padding-top: 15px;}
+    .navbar ul {font-size: 18px;}
+}
+.nav-slider div.cross-container{
+    position: absolute;
+    top:20px;
+    right:25px;
+    width: max-content;
+    height: max-content;
+    align-content: center;
+    border-radius: 30px;
+}
+.rightLine{
+    position: absolute;
+    right: 10px;
+    top:0;
+    height: 100%;
+    width: 0;
+    z-index: 20;
+    outline: 2px solid rgb(212,255,19);
+}
+#arrow{
+    z-index: -10;
+    left: -70px;
+    top: 40%;
+    position: fixed;
+
+    transition:         0.4s ease;
+    -o-transition:      0.4s ease;
+    -moz-transition:    0.4s ease;
+    -webkit-transition: 0.4s ease;
+}
+#arrow i{
+    position: absolute;
+    font-size: 60px;
+    color: rgb(212,255,19);
+}
+.cross-container i{
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(212, 255, 19);
+    text-align: center;
+    padding: 2px;
+
+    transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+div.cross-container i:hover{
+    color: coral;
+
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+.nav-slider div.activeNav{
+    border-left-color: #222831;
+    background-color: rgb(212,255,19);
+}
+.nav-slider div.activeNav a{
+    color: #222831;
+}
+.main-a-catalog.activeNav:hover{
+    border-left-color: #222831;
+}

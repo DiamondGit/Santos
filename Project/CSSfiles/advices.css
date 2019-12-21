@@ -1,0 +1,51 @@
+div.page{
+    text-align: center;
+    margin-left:10%;
+    width: 80%;
+    align: center;
+    margin-top: 240px;
+    align-items: center;
+    background-color: rgba(11,11,11,0.9);
+    height: max-content;
+    padding: 5px;
+    border: 2px solid rgb(212, 255, 19);
+    z-index: -11;
+    font-family: Montserrat;
+}
+.advice h2{
+    color: white;
+    text-align: left;
+    padding: 0 10px;
+    margin: 10px 50px;
+    width: max-content;
+    float: left;
+}
+.liner{
+    width: 0;
+    height: 50px;
+    border-bottom: 10px double rgb(212,255,19);
+
+    transition:        1.5s;
+    -o-transition:     1.5s;
+    -moz-transition:   1.5s;
+    -webkit-transition:1.5s;
+}
+.advice:hover .liner{
+    width: 100%;
+}
+.content{
+    border-bottom: 2px solid rgb(212,255,19);
+    padding: 10px 10px 20px 10px;
+    display: flex;
+}
+.content iframe{
+    width: 480px;
+    border: 2px solid rgb(212,255,19);
+}
+.description{
+    color: #eeeeee;
+    text-indent: 15px;
+    padding: 10px;
+    text-align: left;
+    width: 70%;
+}

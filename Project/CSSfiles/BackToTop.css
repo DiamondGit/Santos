@@ -1,0 +1,59 @@
+#BackToTop {
+    display: inline-block;
+    background-color: rgb(212,255,19);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    -o-transition: background-color .3s, opacity .5s, visibility .5s;
+    -moz-transition: background-color .3s, opacity .5s, visibility .5s;
+    -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#BackToTop{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 50px;
+    color: black;
+    font-family: Montserrat,serif;
+
+}
+#BackToTop::before{
+    content: "Back to Top";
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    left: -150px;
+    padding: 0 10px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgb(0,0,0);
+
+    transition: opacity .3s, visibility .3s;
+    -o-transition: opacity .3s, visibility .3s;
+    -moz-transition: opacity .3s, visibility .3s;
+    -webkit-transition: opacity .3s, visibility .3s;
+}
+#BackToTop:hover {
+    cursor: pointer;
+    background-color: coral;
+}
+#BackToTop:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+#BackToTop:active {
+    background-color: #555;
+}
+#BackToTop.show {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Santos | News</title>
+    <link rel="icon" href="../Project_pictures/icon.png" type="image/x-icon">
+    <link href="CSSfiles/news.css" rel="stylesheet" type="text/css">
+    <link href="CSSfiles/navigation_bar.css" rel="stylesheet" type="text/css">
+    <link href="CSSfiles/footer.css" rel="stylesheet" type="text/css">
+    <link href="CSSfiles/BackToTop.css" rel="stylesheet" type="text/css"> <!--this-->
+    <script src="JSfiles/main.js"></script>
+    <script src="JSfiles/search.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--this-->
+    <style>
+        body{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),url("../Project_pictures/back10.jpg");
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a id="BackToTop"><i class="fa fa-chevron-circle-up"></i></a>
+    <script src="JSfiles/BackToTop.js"></script>
+
+    <div id ="div-nav-main">
+    <div class="navigation">
+        <div class="slideOpener"><i class="material-icons" onclick="uniNav()" onmouseover="preOpen()" onmouseout="Normal()">menu</i></div>
+        <div class="logo"><a href="main.html"><i class="material-icons">blur_on</i>Santos</a></div>
+        <div class="tabs">
+            <div class="tab"><a href="all_shop.html">Shop</a><div class="drop-container"><i class="material-icons">store</i></div></div>
+            <div class="tab"><a href="popular.html">Popular Items</a><div class="drop-container"><i class="material-icons">trending_up</i></div></div>
+            <div class="tab"><a href="services.html">Services</a><div class="drop-container"><i class="material-icons">format_paint</i></div></div> <!-- smoking_rooms -->
+            <div class="tab activeNav"><a href="news.html">News</a><div class="drop-container"><i class="material-icons">ballot</i></div></div>
+            <div class="tab"><a href="support.html">Support</a><div class="drop-container"><i class="material-icons">contact_support</i></div></div>
+        </div>
+        <div class="search">
+            <form id="search">
+                <input id="search_bar" type="text" placeholder="Search from Santos" name="search_inp">
+                <button id="submit_button" type="button" onclick="slideSearch()" title="Search"><i class="material-icons">search</i></button>
+            </form>
+        </div>
+    </div>
+    <div id="arrow"><i class="material-icons">double_arrow</i></div>
+    <div id="div-nav-slide" class="nav-slider">
+        <div class="rightLine"></div>
+        <div class="cross-container"><i class="material-icons" onclick="uniNav()">clear</i></div>
+        <div class="a-container">
+            <div class="main-a-catalog" onclick="window.open('Catalogs/building_materials.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs activeNav" href="Catalogs/building_materials.html">Building Materials</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/decoration.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/decoration.html">Decoration</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/paints.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/paints.html">Paints</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/tools.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/tools.html">Tools</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/electrical_goods.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/electrical_goods.html">Electrical Goods</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/plumbing.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/plumbing.html">Plumbing</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/house_and_garden.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/house_and_garden.html">House and Garden</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/windows.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/windows.html">Windows</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/stairs.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/stairs.html">Stairs</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/doors.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/doors.html">Doors</a>
+            </div>
+            <div class="main-a-catalog" onclick="window.open('Catalogs/other.html','_self')">
+                <div class="back-filler"></div>
+                <a class="catalogs" href="Catalogs/other.html">Other</a>
+            </div>
+        </div>
+    </div>
+</div> <!--this-->
+    <div id="shadow" onclick="closeNav()"></div>
+
+    <div class="page">
+        <div class="news">
+            <div class="new">
+                <img src="../Project_pictures/joke1.jpg">
+                <div class="new_title">
+                    <div class="slider_new">
+                        <h2>Where can I get some?</h2>
+                        <div class="slide">
+                            11.12.2019
+                        </div>
+                    </div>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </div>
+            <div class="new">
+                <img src="../Project_pictures/joke2.jpg">
+                <div class="new_title">
+                    <div class="slider_new">
+                        <h2>Where can I get some?</h2>
+                        <div class="slide">
+                            05.08.2019
+                        </div>
+                    </div>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </div>
+            <div class="new">
+                <img src="../Project_pictures/joke3.jpg">
+                <div class="new_title">
+                    <div class="slider_new">
+                        <h2>Where can I get some?</h2>
+                        <div class="slide">
+                            35.01.2019
+                        </div>
+                    </div>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </div>
+            <div class="new">
+                <img src="../Project_pictures/joke4.jpg">
+                <div class="new_title">
+                    <div class="slider_new">
+                        <h2>Where can I get some?</h2>
+                        <div class="slide">
+                            05.08.2012
+                        </div>
+                    </div>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </div>
+            <div class="new">
+                <img src="../Project_pictures/joke5.jpeg">
+                <div class="new_title">
+                    <div class="slider_new">
+                        <h2>Where can I get some?</h2>
+                        <div class="slide">
+                            31.03.2021
+                        </div>
+                    </div>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </div>
+            <div class="new">
+                <img src="../Project_pictures/joke6.jpg">
+                <div class="new_title">
+                    <div class="slider_new">
+                        <h2>Where can I get some?</h2>
+                        <div class="slide">
+                            31.31.2031
+                        </div>
+                    </div>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    <div class="footer-info">
+        <div class="links">
+            <div>
+                <h3>About</h3>
+                <ul>
+                    <li><a href="FooterLinks/AboutUs.html">About Us</a></li>
+                    <li><a href="FooterLinks/Careers.html">Careers</a></li>
+                    <li><a href="FooterLinks/CompareSales.html">Corporate Sales</a></li>
+                    <li><a href="FooterLinks/WhereToBuy.html">Where to Buy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="FooterLinks/Contact.html">Contact</a></li>
+                    <li><a href="FooterLinks/Returns.html">Returns</a></li>
+                    <li><a href="FooterLinks/Warranty.html">Warranty</a></li>
+                    <li><a href="FooterLinks/Help.html">Help</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="FooterLinks/Privacy.html">Privacy</a></li>
+                    <li><a href="FooterLinks/Terms.html">Terms</a></li>
+                    <li><a href="FooterLinks/Patents.html">Patents</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-desc">
+            <div class="small-info">
+                <div class="about">
+                    <h3>About the company</h3>
+                    <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                </div>
+                <div class="address">
+                    <ul>
+                        <li><i class="material-icons">room</i><span>21 Revolution Street  |  <strong>Paris, France</strong></span></li>
+                        <li><i class="material-icons">call</i><span>+1 555 12345  |  <strong>Alberto Franc</strong></span></li>
+                        <li><i class="material-icons">email</i><span>support@company.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-container">
+                <div class="icons">
+                    <div><i class="fa fa-facebook-square" onclick="window.open('https://www.facebook.com')"></i></div>
+                    <div><i class="fa fa-google-plus-square" onclick="window.open('https://www.googleplus.com')"></i></div>
+                    <div><i class="fa fa-instagram" onclick="window.open('https://www.instagram.com')"></i></div>
+                    <div><i class="fa fa-youtube-square" onclick="window.open('https://www.youtube.com')"></i></div>
+                    <div><i class="fa fa-linkedin-square" onclick="window.open('https://www.linkedin.com')"></i></div>
+                    <div><i class="fa fa-twitter-square" onclick="window.open('https://www.twitter.com')"></i></div>
+                    <div><i class="fa fa-pinterest-square" onclick="window.open('https://www.pinterest.com')"></i></div>
+                    <div><i class="fa fa-snapchat-square" onclick="window.open('https://www.snapchat.com')"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div> <!--this-->
+
+</body>
+</html>

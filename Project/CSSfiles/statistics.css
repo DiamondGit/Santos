@@ -1,0 +1,70 @@
+ul.display-container {
+    margin: 0;
+    display: flex;
+    color: white;
+    padding: 0;
+    cursor: context-menu;
+    font-family: "Montserrat ExtraLight",serif;
+
+    user-select:         none;
+    -ms-user-select:     none;
+    -moz-user-select:    none;
+    -webkit-user-select: none;
+}
+
+ul.display-container .note-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+ul.display-container .circle {
+    position: relative;
+}
+
+ul.display-container .circle__svg {
+    transform: rotate(-90deg);
+}
+
+ul.display-container .circle__progress {
+    fill: none;
+    stroke-width: 4;
+    stroke-opacity: 0.3;
+    stroke-linecap: round;
+}
+
+ul.display-container .circle__progress--fill {
+    --initialStroke: 0;
+    --transitionDuration: 0;
+    stroke-opacity: 1;
+    stroke-dasharray: var(--initialStroke);
+    stroke-dashoffset: var(--initialStroke);
+    transition: stroke-dashoffset var(--transitionDuration) ease;
+}
+
+ul.display-container .note-display:nth-child(1) .circle__progress { stroke: #AA00FF; }
+ul.display-container .note-display:nth-child(2) .circle__progress { stroke: #FFAA00; }
+ul.display-container .note-display:nth-child(3) .circle__progress { stroke: #FF00AA; }
+ul.display-container .note-display:nth-child(4) .circle__progress { stroke: #00FFAA; }
+
+ul.display-container .percent {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    transform: translate(-50%, -50%);
+}
+
+ul.display-container .percent__int { font-size: 28px; }
+ul.display-container .percent__dec { font-size: 17px; }
+
+ul.display-container .label {
+    font-family: "Montserrat Light",serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}

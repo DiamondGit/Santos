@@ -1,0 +1,84 @@
+div.page{
+    text-align: center;
+    margin-left:10%;
+    width: 80%;
+    align: center;
+    margin-top: 240px;
+    z-index: -10;
+
+    background-color: rgba(0,0,0,0.7);
+    border: 2px solid rgb(212,255,19);
+    padding: 5px;
+}
+div.services{
+    display: flex;
+    flex: 30%;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+div.service{
+    margin: 5px 5px;
+    width: max-content;
+    align-items: center;
+
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+div.description{
+    width: 415px;
+    position: absolute;
+    /*border: 2px solid black;*/
+
+}
+div.description h2{
+    border-left: 3px solid rgb(212,255,19);
+    border-right: 3px solid rgb(212,255,19);
+    background-color: #222831;
+
+    padding: 5px 15px;
+    width: 379px;
+    font-family: "Montserrat ExtraLight";
+    color: #eeeeee;
+    margin: 0;
+    text-align: left;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+div.about_serv{
+    background-color: rgba(0,0,0,0.7);
+    color: #999999;
+    font-family: "Titillium Web Light";
+    text-align: left;
+    text-indent: 10px;
+    padding: 5px 10px;
+    transition: 0.4s;
+    opacity: 0;
+    height: 100%;
+    overflow: hidden;
+}
+div.service img{
+    width: 415px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+ }
+div.service:hover div.about_serv{
+    opacity: 1;
+}
+div.service:hover h2{
+    border-left-width: 30px;
+    border-right-width: 30px;
+    padding-left: 3px;
+    width: 337px;
+}
+
+div.page h2{
+    color: white;
+    font-family: "Montserrat Medium";
+    font-size: 20px;
+}

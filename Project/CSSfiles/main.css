@@ -1,0 +1,208 @@
+div.page{
+    text-align: center;
+    margin-left:10%;
+    width: 80%;
+    align: center;
+    margin-top: 240px;
+    z-index: -10;
+}
+div.info{
+    align-items: center;
+    background-color: rgba(11,11,11,0.9);
+    height: 665px;
+    border: 2px solid rgb(212, 255, 19);
+    z-index: -11;
+    border-top-left-radius: 75px;
+
+}
+
+#demo{
+    background-color: #393e46;
+    font-family: "Montserrat Medium";
+    position: absolute;
+    color: gray;
+    font-size: 20px;
+    left: 600px;
+    padding: 7px;
+    display: none;
+}
+
+div.info h1{
+    float: left;
+    color: #d4ff13;
+    padding: 25px 35px 25px 88px;
+    margin: 0px 15px 10px 0px;
+    font-family: COCOGOOSE LETTERPRESS;
+    font-size: 60px;
+    border-bottom-width: 6px;
+    border-bottom-style: dashed;
+    border-bottom-color: rgb(212, 255, 19);
+
+    border-right-width: 6px;
+    border-right-style: dashed;
+    border-right-color: rgb(212, 255, 19);
+
+    border-radius: 100px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div.info h1 i.material-icons{
+    left:-6px;
+    font-size: 80px;
+    position: absolute;
+    padding: 0;
+    margin:0 12%;
+    float:left;
+    z-index: -4;
+
+}
+#img-container{
+    float: right;
+    display: inline-grid;
+}
+
+#img-container img{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#portfolio1{
+    margin: 5px;
+    float: right;
+    width:400px;
+}
+
+#portfolio2{
+    margin: 0 5px 5px 5px;
+    width:400px;
+    float: right;
+}
+
+div.info p{
+    text-align: left;
+    color: #dbdbdb;
+    font-family: Titillium Web;
+    font-size: 20px;
+    margin: 33px 25px 15px 25px;
+    padding: 0;
+    text-indent: 40px;
+}
+
+hr{
+    border-color: rgb(212, 255, 19);
+    border-width: 1px;
+    border-style: solid;
+    background-color: rgb(212, 255, 19);
+}
+
+div.info h3{
+    color: gray;
+    font-size: 30px;
+    font-family: "Titillium Web ExtraLight";
+    text-align: left;
+    padding: 0 90px;
+    margin: 40px 0 10px 0;
+}
+div.info ol{
+    list-style-type: none;
+    padding: 0 80px;
+    margin: 0;
+}
+
+div.info ol li{
+    color: #dbdbdb;
+    font-size: 20px;
+    font-family: "Titillium Web SemiBold";
+    margin:5px;
+    padding: 0 10px;
+    text-align: left;
+    width: max-content;
+
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: #d4ff13;
+
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #d4ff13;
+
+    border-radius: 12px;
+}
+
+#FF,#FS,#SF,#SS,#ST,#T{
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+#FF:hover h2,#FS:hover h2,#SF:hover h2,#SS:hover h2,#ST:hover h2,#T:hover h2{
+    background-color: rgba(0,0,0,0.7);
+}
+#FF img,#FS img{
+    width: 633px;
+}
+#SF img,#SS img,#ST img{
+    width: 420px;
+}
+#T img{
+    width: 1269px;
+}
+div.main-catalogs{
+     margin: 50px 0 0 0;
+     padding: 0;
+     background-color: rgba(11,11,11,0.9);
+     border: 2px solid rgb(212, 255, 19);
+     align-items: center;
+     z-index: -4;
+ }
+div.main-catalogs img{
+    width: 400px;
+    margin: 0;
+    padding: 0;
+}
+.main-catalogs h2{
+    position: absolute;
+    margin:0;
+    top:40px;
+    left:0;
+    width: 100%;
+    padding: 100px 0 ;
+    font-size: 50px;
+    font-family: "Titillium Web",serif;
+    color: rgb(212, 255, 19);
+    background-color: rgba(0,0,0,0.4);
+    transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+}
+.main-catalogs table{
+    width: 100%;
+    z-index: -4;
+}
+div.anim{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+
+div.line{
+    position: absolute;
+    height: 3px;
+    background-color: rgb(212,255,19);
+    width: 0;
+    top: 210px;
+
+    transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    -moz-transition: 1s;
+}
+#FF:hover div.line,#FS:hover div.line,#SF:hover div.line,#SS:hover div.line,#ST:hover div.line,#T:hover div.line{
+    width: 100%;
+}
